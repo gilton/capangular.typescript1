@@ -1,21 +1,27 @@
 import { Endereco } from './Endereco';
+import { Produto } from './Produto';
+
+
 export class Pedido {
 
     private pedidoId: number;
     private enderecoEntrega: Endereco;
     private valor: number;
-    private imposto: number;
-    private frete: number;
     private tarifado: boolean;
+    
+    private TAXA_ALIQUOTA = 0.08;
+    private TAXA_FRETE = 0.15;
+    
+    private produtos?: Array<Produto>;
 
-	constructor($pedidoId: number, $enderecoEntrega: Endereco, $valor: number, $imposto: number, $frete: number, $tarifado: boolean) {
+
+	constructor($pedidoId: number, $enderecoEntrega: Endereco, $valor: number, $tarifado: boolean) {
 		this.pedidoId = $pedidoId;
 		this.enderecoEntrega = $enderecoEntrega;
 		this.valor = $valor;
-		this.imposto = $imposto;
-		this.frete = $frete;
 		this.tarifado = $tarifado;
 	}
+	
 
 
     /**
@@ -42,21 +48,7 @@ export class Pedido {
 		return this.valor;
 	}
 
-    /**
-     * Getter $imposto
-     * @return {number}
-     */
-	public getImposto(): number {
-		return this.imposto;
-	}
-
-    /**
-     * Getter $frete
-     * @return {number}
-     */
-	public getFrete(): number {
-		return this.frete;
-	}
+    
 
     /**
      * Getter $tarifado
@@ -90,21 +82,6 @@ export class Pedido {
 		this.valor = value;
 	}
 
-    /**
-     * Setter $imposto
-     * @param {number} value
-     */
-	public setImposto(value: number) {
-		this.imposto = value;
-	}
-
-    /**
-     * Setter $frete
-     * @param {number} value
-     */
-	public setFrete(value: number) {
-		this.frete = value;
-	}
 
     /**
      * Setter $tarifado
@@ -115,12 +92,8 @@ export class Pedido {
 	}
 
 
-    public ehTarifadoOFrete(value: boolean): number {
-        if( value == true ) {
-            this.imposto = 0.15;
-            return this.valor + (this.valor * this.imposto) + this.frete;
-        }
-        else return this.valor + this.frete;
+    public calcularVlrTotal(value: boolean): number {
+        
     }
 
 

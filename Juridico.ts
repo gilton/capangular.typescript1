@@ -1,6 +1,6 @@
 import { Cliente } from "./Cliente";
 
-class Juridico extends Cliente {
+export class Juridico extends Cliente {
 
     private _cnpj: string;
 

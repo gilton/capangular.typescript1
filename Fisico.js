@@ -13,6 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
+exports.Fisico = void 0;
 var Cliente_1 = require("./Cliente");
 var Fisico = /** @class */ (function (_super) {
     __extends(Fisico, _super);
@@ -67,3 +68,4 @@ var Fisico = /** @class */ (function (_super) {
     };
     return Fisico;
 }(Cliente_1.Cliente));
+exports.Fisico = Fisico;

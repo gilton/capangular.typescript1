@@ -1,6 +1,6 @@
 import { Cliente } from "./Cliente";
 
-class Fisico extends Cliente {
+export class Fisico extends Cliente {
     
 
     private _cpf: string;

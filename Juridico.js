@@ -13,6 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
+exports.Juridico = void 0;
 var Cliente_1 = require("./Cliente");
 var Juridico = /** @class */ (function (_super) {
     __extends(Juridico, _super);
@@ -37,3 +38,4 @@ var Juridico = /** @class */ (function (_super) {
     };
     return Juridico;
 }(Cliente_1.Cliente));
+exports.Juridico = Juridico;

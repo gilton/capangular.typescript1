@@ -19,7 +19,7 @@ class Juridico extends Cliente {
      * Getter cnpj
      * @return {string}
      */
-	public get cnpj(): string {
+	public getCnpj(): string {
 		return this._cnpj;
 	}
 
@@ -27,7 +27,7 @@ class Juridico extends Cliente {
      * Setter cnpj
      * @param {string} value
      */
-	public set cnpj(value: string) {
+	public setCnpj(value: string) {
 		this._cnpj = value;
 	}
 

@@ -17,7 +17,7 @@ export class Cliente {
             this._email = email;
         }
         
-        public get nome(): string {
+        public getNome(): string {
             return this._nome;
         }
         
@@ -27,7 +27,7 @@ export class Cliente {
      * Getter login
      * @return {string}
      */
-	public get login(): string {
+	public getLogin(): string {
 		return this._login;
 	}
 
@@ -35,7 +35,7 @@ export class Cliente {
      * Getter senha
      * @return {string}
      */
-	public get senha(): string {
+	public getSenha(): string {
 		return this._senha;
 	}
 
@@ -43,7 +43,7 @@ export class Cliente {
      * Getter email
      * @return {string}
      */
-	public get email(): string {
+	public getEmail(): string {
 		return this._email;
 	}
 
@@ -51,7 +51,7 @@ export class Cliente {
      * Setter nome
      * @param {string} value
      */
-	public set nome(value: string) {
+	public setNome(value: string) {
 		this._nome = value;
 	}
 
@@ -59,7 +59,7 @@ export class Cliente {
      * Setter login
      * @param {string} value
      */
-	public set login(value: string) {
+	public setLogin(value: string) {
 		this._login = value;
 	}
 
@@ -67,7 +67,7 @@ export class Cliente {
      * Setter senha
      * @param {string} value
      */
-	public set senha(value: string) {
+	public setSenha(value: string) {
 		this._senha = value;
 	}
 
@@ -75,9 +75,9 @@ export class Cliente {
      * Setter email
      * @param {string} value
      */
-	public set email(value: string) {
+	public setEmail(value: string) {
 		this._email = value;
 	}
 
         
-    }
+}

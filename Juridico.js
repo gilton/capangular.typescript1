@@ -21,23 +21,19 @@ var Juridico = /** @class */ (function (_super) {
         _this._cnpj = cnpj;
         return _this;
     }
-    Object.defineProperty(Juridico.prototype, "cnpj", {
-        /**
-         * Getter cnpj
-         * @return {string}
-         */
-        get: function () {
-            return this._cnpj;
-        },
-        /**
-         * Setter cnpj
-         * @param {string} value
-         */
-        set: function (value) {
-            this._cnpj = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
+    /**
+     * Getter cnpj
+     * @return {string}
+     */
+    Juridico.prototype.getCnpj = function () {
+        return this._cnpj;
+    };
+    /**
+     * Setter cnpj
+     * @param {string} value
+     */
+    Juridico.prototype.setCnpj = function (value) {
+        this._cnpj = value;
+    };
     return Juridico;
 }(Cliente_1.Cliente));

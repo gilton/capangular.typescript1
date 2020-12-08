@@ -27,7 +27,7 @@ class Fisico extends Cliente {
      * Getter cpf
      * @return {string}
      */
-	public get cpf(): string {
+	public getCpf(): string {
 		return this._cpf;
 	}
 
@@ -35,7 +35,7 @@ class Fisico extends Cliente {
      * Getter rg
      * @return {string}
      */
-	public get rg(): string {
+	public getRg(): string {
 		return this._rg;
 	}
 
@@ -43,7 +43,7 @@ class Fisico extends Cliente {
      * Getter genero
      * @return {string}
      */
-	public get genero(): string {
+	public getGenero(): string {
 		return this._genero;
 	}
 
@@ -51,7 +51,7 @@ class Fisico extends Cliente {
      * Setter cpf
      * @param {string} value
      */
-	public set cpf(value: string) {
+	public setCpf(value: string) {
 		this._cpf = value;
 	}
 
@@ -59,7 +59,7 @@ class Fisico extends Cliente {
      * Setter rg
      * @param {string} value
      */
-	public set rg(value: string) {
+	public setRg(value: string) {
 		this._rg = value;
 	}
 
@@ -67,7 +67,7 @@ class Fisico extends Cliente {
      * Setter genero
      * @param {string} value
      */
-	public set genero(value: string) {
+	public setGenero(value: string) {
 		this._genero = value;
 	}
    

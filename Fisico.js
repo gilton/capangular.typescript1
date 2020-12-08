@@ -23,59 +23,47 @@ var Fisico = /** @class */ (function (_super) {
         _this._genero = genero;
         return _this;
     }
-    Object.defineProperty(Fisico.prototype, "cpf", {
-        /**
-         * Getter cpf
-         * @return {string}
-         */
-        get: function () {
-            return this._cpf;
-        },
-        /**
-         * Setter cpf
-         * @param {string} value
-         */
-        set: function (value) {
-            this._cpf = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Fisico.prototype, "rg", {
-        /**
-         * Getter rg
-         * @return {string}
-         */
-        get: function () {
-            return this._rg;
-        },
-        /**
-         * Setter rg
-         * @param {string} value
-         */
-        set: function (value) {
-            this._rg = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Fisico.prototype, "genero", {
-        /**
-         * Getter genero
-         * @return {string}
-         */
-        get: function () {
-            return this._genero;
-        },
-        /**
-         * Setter genero
-         * @param {string} value
-         */
-        set: function (value) {
-            this._genero = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
+    /**
+     * Getter cpf
+     * @return {string}
+     */
+    Fisico.prototype.getCpf = function () {
+        return this._cpf;
+    };
+    /**
+     * Getter rg
+     * @return {string}
+     */
+    Fisico.prototype.getRg = function () {
+        return this._rg;
+    };
+    /**
+     * Getter genero
+     * @return {string}
+     */
+    Fisico.prototype.getGenero = function () {
+        return this._genero;
+    };
+    /**
+     * Setter cpf
+     * @param {string} value
+     */
+    Fisico.prototype.setCpf = function (value) {
+        this._cpf = value;
+    };
+    /**
+     * Setter rg
+     * @param {string} value
+     */
+    Fisico.prototype.setRg = function (value) {
+        this._rg = value;
+    };
+    /**
+     * Setter genero
+     * @param {string} value
+     */
+    Fisico.prototype.setGenero = function (value) {
+        this._genero = value;
+    };
     return Fisico;
 }(Cliente_1.Cliente));
